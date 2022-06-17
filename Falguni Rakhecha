@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main ()
+{
+float phy, chem, maths, CS, eng;
+float per,avg;
+float total;
+
+printf(" enter the marks of physics ");
+scanf("%f", &phy);
+printf(" enter the marks of chemistry ");
+scanf("%f", &chem);
+printf("enter the marks of maths");
+scanf("%f", &maths);
+printf(" enter the marks of CS");
+scanf("%f", &CS);
+printf("enter the marks of English");
+scanf("%f", &eng);
+total= phy+chem+maths+CS+eng;
+printf("\n the total mark is %.2f ",total);
+per = (total/500)*100;
+avg = (total/5);
+printf("\n the percentage mark is : %.2f ", per);
+printf("\n the average mark  is: %.2f", avg);
+
+/* Grade calculation */
+if(per>=80) 
+          printf("\n Grade : A");
+else if(per>=60) 
+          printf("\n Grade : B");
+else if(per>=40) 
+          printf("\n Grade : C");
+else if(per<40)
+          printf("\n Fail ");
+
+return 0;
+}
